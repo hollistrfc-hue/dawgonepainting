@@ -9,21 +9,30 @@
   <meta property="og:description" content="Interior, exterior, and custom painting projects from Stillwater, OK's most trusted painter." />
   <meta property="og:type" content="website" />
   <link rel="stylesheet" href="style.css" />
+  <style>
+    .ow-placeholder {
+      width: 100%;
+      height: 100%;
+      background: #d0c8be;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #888;
+      font-size: 0.85rem;
+      font-family: sans-serif;
+    }
+  </style>
 </head>
 <body>
 
-  <!-- ============================================================
-       NAVIGATION
-       ============================================================ -->
+  <!-- NAV -->
   <nav class="nav" aria-label="Main navigation">
     <div class="nav__inner">
       <a href="index.html" class="nav__logo" aria-label="Dawgone Custom Painting — Home">
         <img src="DawgoneLogo.png" alt="Dawgone Custom Painting" />
       </a>
       <button class="nav__toggle" aria-label="Toggle navigation" aria-expanded="false">
-        <span></span>
-        <span></span>
-        <span></span>
+        <span></span><span></span><span></span>
       </button>
       <ul class="nav__links">
         <li><a href="index.html">Home</a></li>
@@ -42,96 +51,99 @@
     </div>
   </nav>
 
-  <!-- ============================================================
-       PAGE HEADER
-       ============================================================ -->
+  <!-- PAGE HEADER -->
   <div class="page-header">
     <h1>Our Work</h1>
     <div class="page-header__accent"></div>
   </div>
 
-  <!-- ============================================================
-       WORK GALLERY
-       ============================================================ -->
+  <!-- INTRO -->
   <section class="section section--white">
-
     <p class="work-intro container">
       Every job tells a story. Here's a look at some of what we've done for homeowners and businesses across Stillwater.
     </p>
-
   </section>
 
-  <!-- ============================================================
-       BEFORE & AFTER PAIRS
-       ============================================================ -->
+  <!-- BEFORE & AFTER -->
   <section class="before-after-section">
+    <div class="hp-container">
+      <div class="hp-section__head" style="margin-bottom:2.5rem;">
+        <span class="hp-label">Transformations</span>
+        <h2 class="hp-heading">Before &amp; After</h2>
+      </div>
+    </div>
     <div class="before-after__rows">
 
-      <!-- Exterior Ranch -->
+      <!-- Example 1 -->
       <div class="before-after__row">
         <div class="before-after__item">
-          <img src="images/project-exterior-ranch-before.jpg" alt="Ranch exterior before painting" loading="lazy">
+          <img src="images/ba1-before.jpg" alt="Exterior before painting" loading="lazy" />
+          <span class="ba-badge">Before</span>
         </div>
         <div class="before-after__item">
-          <img src="images/project-exterior-black-after-1.jpg" alt="Ranch exterior after painting" loading="lazy">
+          <img src="images/ba1-after.jpg" alt="Exterior after painting" loading="lazy" />
+          <span class="ba-badge ba-badge--after">After</span>
         </div>
       </div>
 
-      <!-- Exterior Peeling -->
+      <!-- Example 2 -->
       <div class="before-after__row">
         <div class="before-after__item">
-          <img src="images/project-exterior-peeling-before.jpg" alt="Exterior before painting" loading="lazy">
+          <img src="images/ba2-before.jpg" alt="Garage doors before painting" loading="lazy" />
+          <span class="ba-badge">Before</span>
         </div>
         <div class="before-after__item">
-          <img src="images/project-exterior-black-after-2.jpg" alt="Exterior after painting" loading="lazy">
+          <img src="images/ba2-after.jpg" alt="Garage doors after painting" loading="lazy" />
+          <span class="ba-badge ba-badge--after">After</span>
         </div>
       </div>
 
-      <!-- Kitchen -->
+      <!-- Example 3 -->
       <div class="before-after__row">
         <div class="before-after__item">
-          <img src="images/project-kitchen-before.jpg" alt="Kitchen before painting" loading="lazy">
+          <img src="images/ba3-before.png" alt="Kitchen cabinets before painting" loading="lazy" />
+          <span class="ba-badge">Before</span>
         </div>
         <div class="before-after__item">
-          <img src="images/project-kitchen-after.jpg" alt="Kitchen after painting" loading="lazy">
+          <img src="images/ba3-after.jpg" alt="Kitchen cabinets after painting" loading="lazy" />
+          <span class="ba-badge ba-badge--after">After</span>
         </div>
       </div>
 
-      <!-- Craftsman -->
+      <!-- Example 4 -->
       <div class="before-after__row">
         <div class="before-after__item">
-          <img src="images/project-exterior-craftsman-progress.jpg" alt="Craftsman home in progress" loading="lazy">
+          <img src="images/ba4-before.jpg" alt="Exterior before painting" loading="lazy" />
+          <span class="ba-badge">Before</span>
         </div>
         <div class="before-after__item">
-          <img src="images/project-exterior-craftsman-deck.jpg" alt="Craftsman deck after painting" loading="lazy">
+          <img src="images/ba4-after.jpg" alt="Exterior after painting" loading="lazy" />
+          <span class="ba-badge ba-badge--after">After</span>
         </div>
       </div>
 
     </div>
   </section>
 
-  <!-- ============================================================
-       MORE PROJECT PHOTOS
-       ============================================================ -->
+  <!-- PHOTO GALLERY -->
   <section class="section section--white">
+    <div class="hp-container">
+      <div class="hp-section__head" style="margin-bottom:2.5rem;">
+        <span class="hp-label">Project Photos</span>
+        <h2 class="hp-heading">More of Our Work</h2>
+      </div>
+    </div>
     <div class="portfolio-grid">
-      <div class="portfolio-grid__item"><img src="images/project-exterior-farmhouse-1.jpg" alt="Farmhouse exterior painting" loading="lazy"></div>
-      <div class="portfolio-grid__item"><img src="images/project-exterior-farmhouse-2.jpg" alt="Farmhouse exterior painting" loading="lazy"></div>
-      <div class="portfolio-grid__item"><img src="images/project-exterior-farmhouse-3.jpg" alt="Farmhouse exterior painting" loading="lazy"></div>
-      <div class="portfolio-grid__item"><img src="images/project-exterior-farmhouse-4.jpg" alt="Farmhouse exterior painting" loading="lazy"></div>
-      <div class="portfolio-grid__item"><img src="images/project-exterior-farmhouse-5.jpg" alt="Farmhouse exterior painting" loading="lazy"></div>
-      <div class="portfolio-grid__item"><img src="images/project-exterior-white-side.jpg" alt="Exterior siding painting" loading="lazy"></div>
-      <div class="portfolio-grid__item"><img src="images/project-exterior-cottage-after.jpg" alt="Cottage exterior after painting" loading="lazy"></div>
-      <div class="portfolio-grid__item"><img src="images/project-interior-blue-room.jpg" alt="Interior room painting" loading="lazy"></div>
-      <div class="portfolio-grid__item"><img src="images/project-porch-dark-progress.jpg" alt="Porch painting in progress" loading="lazy"></div>
-      <div class="portfolio-grid__item"><img src="images/project-mural-memorial.jpg" alt="Custom mural work" loading="lazy"></div>
-      <div class="portfolio-grid__item"><img src="images/project-hero-collage.jpg" alt="Project collage" loading="lazy"></div>
+      <div class="portfolio-grid__item"><div class="ow-placeholder">Photo</div></div>
+      <div class="portfolio-grid__item"><div class="ow-placeholder">Photo</div></div>
+      <div class="portfolio-grid__item"><div class="ow-placeholder">Photo</div></div>
+      <div class="portfolio-grid__item"><div class="ow-placeholder">Photo</div></div>
+      <div class="portfolio-grid__item"><div class="ow-placeholder">Photo</div></div>
+      <div class="portfolio-grid__item"><div class="ow-placeholder">Photo</div></div>
     </div>
   </section>
 
-  <!-- ============================================================
-       CTA BANNER
-       ============================================================ -->
+  <!-- CTA -->
   <section class="cta-banner">
     <h2>Ready to transform your space? Let's talk.</h2>
     <div class="cta-banner__buttons">
@@ -140,9 +152,7 @@
     </div>
   </section>
 
-  <!-- ============================================================
-       FOOTER
-       ============================================================ -->
+  <!-- FOOTER -->
   <footer class="footer">
     <div class="footer__grid">
       <div>
