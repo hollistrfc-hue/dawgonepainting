@@ -2169,3 +2169,88 @@ p {
   .hp-btn { width: 100%; text-align: center; }
   .hp-cta__actions .hp-btn { width: 100%; text-align: center; }
 }
+
+/* ============================================================
+   NAV — Leave a Review button
+   ============================================================ */
+.nav__review-btn {
+  background: var(--orange) !important;
+  color: #fff !important;
+  border-color: transparent !important;
+  padding: 0.5rem 1.1rem !important;
+  font-size: 0.75rem !important;
+  letter-spacing: 1px !important;
+  border: none !important;
+  border-bottom: none !important;
+  transition: background 0.2s ease !important;
+  white-space: nowrap;
+}
+.nav__review-btn:hover {
+  background: #d94d00 !important;
+  color: #fff !important;
+  border-bottom-color: transparent !important;
+}
+
+.nav__mobile-review-btn {
+  color: var(--orange) !important;
+  font-weight: 700 !important;
+  border-top: 2px solid var(--orange) !important;
+  border-bottom: none !important;
+  margin-top: 0.5rem;
+  padding-top: 1rem !important;
+}
+.nav__mobile-review-btn:hover { color: #fff !important; }
+
+/* ============================================================
+   HOMEPAGE — Leave a Review Section
+   ============================================================ */
+.hp-leave-review {
+  background: #fff;
+  padding: 80px 0;
+  border-top: 1px solid #e8e0d5;
+  text-align: center;
+}
+
+.hp-leave-review__inner {
+  max-width: 620px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.hp-leave-review__stars {
+  color: var(--orange);
+  font-size: 1.75rem;
+  letter-spacing: 4px;
+}
+
+.hp-leave-review__heading {
+  font-family: 'Montserrat', sans-serif;
+  font-size: clamp(1.75rem, 3vw, 2.5rem);
+  font-weight: 800;
+  color: #111;
+  line-height: 1.15;
+  margin: 0;
+  text-transform: none;
+  letter-spacing: -0.5px;
+}
+
+.hp-leave-review__sub {
+  font-size: 1rem;
+  color: #777;
+  line-height: 1.75;
+  max-width: 500px;
+  margin: 0;
+}
+
+.hp-leave-review__btn {
+  margin-top: 0.5rem;
+  font-size: 1rem !important;
+  padding: 1.1rem 2.5rem !important;
+}
+
+@media (max-width: 480px) {
+  .hp-leave-review__btn { width: 100%; text-align: center; }
+}
