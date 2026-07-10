@@ -2050,6 +2050,57 @@ p {
 .hp-about__points span { color: #333; }
 
 /* ---- Reviews ---- */
+/* ---- Boone Pickens Featured Section ---- */
+.hp-boone {
+  background: #1a1a1a;
+  color: #fff;
+}
+.hp-boone .hp-label {
+  color: var(--orange);
+}
+.hp-boone .hp-heading {
+  color: #fff;
+}
+.hp-boone__sub {
+  text-align: center;
+  max-width: 680px;
+  margin: 0 auto 2.5rem;
+  color: #ccc;
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+.hp-boone__gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.25rem;
+  max-width: 1000px;
+  margin: 0 auto 1.5rem;
+}
+.hp-boone__img-wrap {
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 6px 24px rgba(0,0,0,0.4);
+  aspect-ratio: 4/3;
+}
+.hp-boone__img-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.4s ease;
+}
+.hp-boone__img-wrap img:hover {
+  transform: scale(1.03);
+}
+.hp-boone__caption {
+  text-align: center;
+  max-width: 640px;
+  margin: 0 auto;
+  color: #999;
+  font-size: 0.88rem;
+  line-height: 1.6;
+}
+
 .hp-reviews {
   background: #F4F0EA;
 }
@@ -2143,12 +2194,17 @@ p {
    ============================================================ */
 @media (max-width: 900px) {
   .hp-cards { grid-template-columns: 1fr; max-width: 480px; margin: 0 auto; }
-  .hp-review-grid { grid-template-columns: 1fr; max-width: 480px; margin: 0 auto; }
+  .hp-review-grid { grid-template-columns: repeat(2, 1fr); }
   .hp-about__grid { grid-template-columns: 1fr; }
   .hp-about__img { height: 55vw; min-height: 260px; }
   .hp-about__content { padding: 3.5rem 2rem; }
   .hp-trust__divider { display: none; }
   .hp-trust__inner { flex-wrap: wrap; gap: 2rem; justify-content: center; }
+  .hp-boone__gallery { grid-template-columns: 1fr 1fr; }
+}
+
+@media (max-width: 600px) {
+  .hp-boone__gallery { grid-template-columns: 1fr; }
 }
 
 @media (max-width: 768px) {
@@ -2163,7 +2219,7 @@ p {
 
 @media (max-width: 480px) {
   .hp-cards { max-width: none; }
-  .hp-review-grid { max-width: none; }
+  .hp-review-grid { grid-template-columns: 1fr; max-width: none; }
   .hp-about__content { padding: 2.5rem 1.5rem; }
   .hp-about__points { grid-template-columns: 1fr; }
   .hp-btn { width: 100%; text-align: center; }
